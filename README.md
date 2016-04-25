@@ -2,12 +2,12 @@
 
 This is the product catalog application develped using angular 2 beta, typescript and routing components.
 
-Features - 
+# Features - 
 1. Add Product. 
 2. Product Listing with Filters and Search.
 
 
-Components used - 
+# Components used - 
 1. Angular 2 beta 
 2. typescripts
 3. Custom pipes for product filteration
