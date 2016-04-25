@@ -1,0 +1,41 @@
+
+<h2 class="text-center">My Products</h2>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+             <div class="input-group">
+                    <input type="text" [(ngModel)]="searchText" class="form-control" style="border-radius:0" placeholder="Search product name" id="inputGroup">
+                    <span class="input-group-addon">
+                        <i class="glyphicon glyphicon-search"></i>
+                    </span>
+             </div><br/>
+             <label>Filters :</label>
+             <hr />
+             <div>
+                 <label for="chkNameAsc"> <input type="radio" id="chkNameAsc" checked="checked" name="chkFilter" (click)="filterBy('Name','ASC')"> Name : A to Z </label>
+             </div>
+              <div>
+                 <label for="chkNameDesc"> <input type="radio" id="chkNameDesc" name="chkFilter" (click)="filterBy('Name','DESC')"> Name : Z to A </label>
+             </div>
+              <div>
+                 <label for="chkPriceAsc"><input type="radio" id="chkPriceAsc" name="chkFilter" (click)="filterBy('Price','ASC')"> Price : Low to High </label>
+             </div>
+              <div>
+                 <label for="chkPriceDesc"> <input type="radio" id="chkPriceDesc" name="chkFilter"  (click)="filterBy('Price','DESC')"> Price : High to Low </label>
+             </div>
+           </div>
+        <div class="col-md-9">
+            <div class="col-md-3 text-center" *ngFor="#product of products | async | searchByProp:searchText | orderByProp:prop:direction">
+                <div class="thumbnail" style="border: 1px solid #9badb4;border-top:5px solid #9badb4;border-radius:0">
+                     <img class="image" src="/images/product-icon.png" alt=".." />
+                    <div class="caption">
+                        <h3>{{product.Name}}</h3>
+                         <h3>{{product.Price | currency}}</h3>
+                        <p>{{product.Description}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
