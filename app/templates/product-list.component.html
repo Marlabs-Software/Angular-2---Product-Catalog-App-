@@ -113,7 +113,7 @@
             <div class="row">
                 <div class="col-md-12" style="padding-left:0px;">
                      <div class="col-md-3 text-center" class="col-md-3 text-center" *ngFor="#product of products | async | searchByProp:searchText | orderByProp:prop:direction">
-                       <div class="thumbnail" style="border: 1px solid #9badb4;border-top:5px solid #9badb4;border-radius:0">
+                       <div class="thumbnail">
                             <img class="image" src="/images/product-icon.png" alt=".." />
                             <div class="caption">
                                 <h3>{{product.Name}}</h3>
