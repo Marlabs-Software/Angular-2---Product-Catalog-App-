@@ -18,6 +18,7 @@ export interface UsedComponent {
   Logo: string;
   ShortDescription: string;
   Description: string;
+  URL:string;
 }
 
 @Injectable()

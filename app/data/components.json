@@ -3,25 +3,29 @@
      {
         "Name":"AngularJs 2", 
         "Logo":"angularjs_logo.png",
-        "ShortDescription":"Engine",
-        "Description":"BMW Engine"
+        "ShortDescription":"Angular is a development platform for building mobile and desktop web applications.",
+        "Description":"",
+        "URL":"https://angular.io/"
     },
     {
         "Name":"Node Js", 
         "Logo":"nodejs-logo.png",
-        "ShortDescription":"Engine",
-        "Description":"BMW Engine"
+        "ShortDescription":"Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.",
+        "Description":"",
+        "URL":"https://nodejs.org/en/"
     },
      {
         "Name":"Typescript", 
         "Logo":"typescript-logo.png",
-        "ShortDescription":"Engine",
-        "Description":"BMW Engine"
+        "ShortDescription":"TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict superset of JavaScript, and adds optional static typing and class-based object-oriented programming to the language.",
+        "Description":"",
+        "URL":"https://www.typescriptlang.org/"
     },
     {
         "Name":"Twitter Bootstrap", 
         "Logo":"bootstrap-logo.png",
-        "ShortDescription":"Engine",
-        "Description":"BMW Engine"
+        "ShortDescription":"Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first web sites. Bootstrap is completely free to download and use!",
+        "Description":"",
+        "URL":"http://getbootstrap.com/"
     }
 ]}
