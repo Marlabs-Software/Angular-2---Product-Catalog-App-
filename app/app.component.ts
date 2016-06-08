@@ -3,8 +3,9 @@ import { HTTP_PROVIDERS } from 'angular2/http';
 import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
 import 'rxjs/Rx'; // load the full rxjs
 
+import { ComponentListComponent } from './components/component-list.component';
+import { ComponentDetailsComponent } from './components/component-details.component';
 import { ProductListComponent } from './components/product-list.component';
-import { ProductComponent } from './components/product.component';
 import { AddProductComponent } from './components/Add-Product.component';
 import { ProductService } from './services/product.service';
 import { CONFIG } from './config';
@@ -20,8 +21,9 @@ import { CONFIG } from './config';
   ]
 })
 @RouteConfig([
-  { path: '/products', name: 'Products', component: ProductListComponent, useAsDefault: true },
-  { path: '/product/:id', name: 'Product', component: ProductComponent },
+  { path: '/components', name: 'UsedComponents', component: ComponentListComponent, useAsDefault: true },
+  { path: '/component-view/:name', name: 'ComponentDetails', component: ComponentDetailsComponent },
+  { path: '/products', name: 'Products', component: ProductListComponent },
   { path: '/add-product', name: 'AddProduct', component: AddProductComponent }
   ])
 export class AppComponent { }

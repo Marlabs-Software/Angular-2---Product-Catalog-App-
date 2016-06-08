@@ -1,6 +1,7 @@
 export let CONFIG = {
   baseUrls: {
     products: 'app/data/products.json',
-    reviews:''
+    reviews:'',
+    components: 'app/data/components.json',
   }
 }

@@ -61,7 +61,7 @@
       border: 1px solid #9badb4;
       /*border-top:5px solid #9badb4;*/
       border-radius:10px;    
-      background: #f3f3f3;
+      background: #fafafa;
     }
     .thumbnail:hover 
     {
@@ -73,6 +73,21 @@
     }    
     .app-uses li{
         padding-bottom: 10px;
+    }
+    .custom-bullet li:before
+    {
+        /*Using a Bootstrap glyphicon as the bullet point*/
+        content: "\e127";
+        font-family: 'Glyphicons Halflings';
+        float: left;
+        margin-left: -17px;
+    }
+    .custom-bullet li {
+        display: block;
+    }
+    .custom-bullet li div {
+        display: block;
+        margin-left: 10px;
     }
 </style>
 <script type="text/javascript">      
